@@ -1,0 +1,14 @@
+﻿<Window x:Class="AirbyteSchemaGeneratorWPF.SchemaViewer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirbyteSchemaGeneratorWPF"
+        mc:Ignorable="d"
+        Title="SchemaViewer" Height="720" Width="1280"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <TreeView x:Name="SchemaTree" Margin="0,0,0,27"/>
+        <Button x:Name="SaveSchema" Content="Export" Click="SaveSchema_Click" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="2,0,0,2"/>
+    </Grid>
+</Window>
